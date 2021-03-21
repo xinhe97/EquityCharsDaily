@@ -1,0 +1,21 @@
+Enter your WRDS username [sean]:WRDS recommends setting up a .pgpass file.
+You can find more info here:
+https://www.postgresql.org/docs/9.5/static/libpq-pgpass.html.
+Loading library list...
+Done
+start comp
+start crsp
+/home/sean/anaconda3/lib/python3.8/site-packages/pandas/core/series.py:726: RuntimeWarning: divide by zero encountered in log
+  result = getattr(ufunc, method)(*inputs, **kwargs)
+/home/sean/anaconda3/lib/python3.8/site-packages/pandas/core/series.py:726: RuntimeWarning: invalid value encountered in log
+  result = getattr(ufunc, method)(*inputs, **kwargs)
+Traceback (most recent call last):
+  File "accounting_60.py", line 1116, in <module>
+    df_temp = data_rawa.groupby(['datadate', 'ffi49'], as_index=False)['bm'].mean()
+  File "/home/sean/anaconda3/lib/python3.8/site-packages/pandas/core/frame.py", line 6511, in groupby
+    return DataFrameGroupBy(
+  File "/home/sean/anaconda3/lib/python3.8/site-packages/pandas/core/groupby/groupby.py", line 525, in __init__
+    grouper, exclusions, obj = get_grouper(
+  File "/home/sean/anaconda3/lib/python3.8/site-packages/pandas/core/groupby/grouper.py", line 781, in get_grouper
+    raise KeyError(gpr)
+KeyError: 'datadate'
